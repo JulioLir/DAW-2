@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/logo-caraB.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/logo-caraB.ico" type="image/x-icon">
+    <title>Cara-B</title>
+</head>
+<body>
+    <header>
+        <nav class="barra-navegacion">
+            <button class="btn-nav" type="button" onclick="navFunc()">
+                <span class="sr-only"></span>
+            </button>
+            <p>MENU</p> 
+            <img src="imgs/logo usuario.png" alt="" class="barra-navegacion__usuario">
+            <img src="imgs/carrito.png" alt="" class="barra-navegacion__carrito">
+            <ul>
+                <li>INICIO</li>
+                <li>CATEGORÍAS</li>
+                <li>CONTACTO</li>
+                <li>AYUDA</li>
+                <li>INICIAR SESIÓN / REGISTRARSE</li>
+            </ul>
+                <input type="text" placeholder="Buscar" class="barra-navegacion__input">
+            <img src="imgs/logo-caraB.png" alt="" class="barra-navegacion__logo">
+        </nav>
+    </header>    
+        <section class="caraB">
+            <div>
+                <h1>Cara-B</h1>
+                <h2>Donde Están Tus Vinilo Desde 1958</h2>
+            </div>
+            <div class="puntos">
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+            </div>
+        </section>
+    
+    <div class="contenedor">
+        <div class="carrito">
+            <img src="imgs/Botón carrito.png" alt="">
+        </div>
+        <section class="discos">
+            <article>
+                <p>&#128293;Últimas Ofertas🕰️</p>
+            </article>
+            <div class="div-discos">
+                <article class="discos__disco">
+                    <p>John Coltrane</p>
+                    <img src="imgs/john-coltrane.png" alt="">
+                    <div>
+                        <p>39.95 &#8364;</p>
+                    </div>
+                </article>
+                <article class="discos__disco">
+                    <p>Elvis Presley</p>
+                    <img src="imgs/elvis.png" alt="">
+                    <div>
+                        <p>40,50 &#8364;</p>
+                    </div>
+                </article>    
+                <article class="discos__disco">
+                    <p>Led Zeppelin</p>
+                    <img src="imgs/led-zeppelin.png" alt="">
+                    <div>
+                        <p>39,95 &#8364;</p>
+                    </div>
+                </article>         
+                <article class="discos__disco">
+                    <p>B.B. King</p>
+                    <img src="imgs/bb-king.png" alt="">
+                    <div>
+                        <p>43,80 &#8364;</p>
+                    </div>
+                </article>
+                <article class="discos__disco">
+                    <p>The Beattles</p>
+                    <img src="imgs/the-beattles.png" alt="">
+                    <div>
+                        <p>40,99 &#8364</p>
+                        
+                    </div>
+                </article>
+                <article class="discos__disco">
+                    <p>Jethro Tull</p>
+                    <img src="imgs/jethro-tull.png" alt="">
+                    <div>
+                        <p>40,99 &#8364;</p>
+                    </div>
+                </article>
+            </div>
+            <ul>
+                <li><figure></figure></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>...</li>
+                <li>158</li>
+                <li><figure></figure></li>
+            </ul>
+        </section>
+        <footer>
+            <nav class="info">
+                <ul class="info__redes">
+                    <li><img src="imgs/Instagram.png" alt=""></li>
+                    <li><img src="imgs/facebook.png" alt=""></li>
+                    <li><img src="imgs/youtube.png" alt=""></li>
+                    <li><img src="imgs/linkedin.png" alt=""></li>
+                    <li><img src="imgs/twitter.png" alt=""></li>
+                    <li><img src="imgs/whatsapp.png" alt=""></li>
+                </ul>
+            </nav>
+            <section class="info-legal">
+                <p>Cara-B</p>
+                <p>Copyright &copy; 2023, Cara-B S.A.</p>
+                <div><a href=""><p>Información legal</p></a><p>-</p><a href="#"><p>Política de privacidad</p></a></div>
+            </section>
+        </footer>
+    </div>
+    <script>
+        function navFunc(){
+            document.querySelector("html").
+            classList.toggle("abierto");
+        }
+    </script>
+</body>
+</html>
