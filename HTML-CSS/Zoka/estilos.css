@@ -1,0 +1,221 @@
+:root {
+  --color-morado: #1A093E;
+  --color-morado-suave: #3F41A6;
+  --color-morado-gris: #787282;
+}
+
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* Reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, figure, div {
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding: 2% 10%;
+  font-family: 'Poppins', sans-serif;
+}
+body > * {
+  margin-bottom: 10% ;
+}
+header{
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-weight: bold;
+
+}
+header > span{
+  float: left;
+  font-size: 36px;
+  
+}
+header nav{
+  display: inline-block;
+  width: 50%;
+}
+header ul{
+  float: left;
+  width: 100%;
+}
+header nav li{
+  display: inline-block;
+  font-size: 20px;
+}
+header nav ul > li{
+  margin-left: 6%;
+  color: var(--color-morado-gris);
+}
+header nav ul > li:first-child{
+  margin-left: 0;
+  color: var(--color-morado);
+}
+header button{
+  width: 12%;
+  float: right;
+  font-size: 18px;
+  padding: 15px 5px;
+  transform: translateY(25%);
+  background: transparent;
+  border: 2px solid var(--color-morado-suave);
+  border-radius: 22px;
+  color: var(--color-morado-suave);
+  font-weight: 700;
+}
+
+header button > * {
+  display: inline-block;
+}
+header button figure{
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border-left: 20px solid var(--color-morado-suave);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-left: 7%;
+}
+.camaras{
+  margin-bottom: 15%;
+}
+.camaras > div:first-child{
+float: left;
+width: 39%;
+}
+.camaras > div:last-child{
+float: right;
+width: 60%;
+}
+.camaras > div:first-child h2{
+  color: var(--color-morado);
+  font-size: 96px;
+  line-height: 110%;
+  font-weight: 900;
+}
+.camaras > div:first-child h2 + p {
+  margin: 10% 0;
+  font-size: 18px;
+  width: 50%;
+  color: var(--color-morado);
+  opacity: 1;
+}
+.boton{
+  font-size: 20px;
+  color:white;
+  padding: 4% 10%;
+  border-radius: 50px;
+  background-color: var(--color-morado-suave);
+  border: 0;
+  box-shadow: 5px 5px 5px black;
+}
+.boton > *{
+  display: inline-block;
+  vertical-align: middle;
+}
+.boton > div{
+  background-color: rgba(255, 255, 255, 0.295);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: 5px;
+}
+.boton > div figure{
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid white;
+  border-right: 1px solid white ;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: rotate(45deg) translateY(-50%);
+
+}
+
+.camaras > div:last-child > img:first-of-type{
+  margin-bottom: 2%;
+  width: 100%;
+}
+.camaras > div:last-child > div{
+  width: 100%;
+}
+.camaras > div:last-child > div > img:last-of-type{
+  width: 57%;
+}
+.camaras > div:last-child > div > img:first-of-type{
+width: 41%;
+margin-right: 2%;
+}
+.arboles > :first-child{
+  float: left;
+  width: 40%;
+}
+.arboles > :first-child > :last-child{
+  float: right;
+}
+.arboles > :first-child > :first-child{
+  float: left;
+  width: 40%;
+  height: 400px;
+}
+.arboles > :first-child > :first-child > figure:first-of-type{
+  width: 45%;
+  height: 77px;
+}
+
+.arboles > :first-child > :first-child > figure:nth-child(2){
+  width: 100%;
+  height: 140px;
+}
+.arboles > :first-child > :first-child > figure:nth-child(3){
+  width: 100%;
+  height: 87px;
+}
+.arboles > :first-child > :first-child > figure:last-of-type{
+  width: 45%;
+  height: 77px;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+.arboles > :first-child > :first-child > figure{
+  background-color: green;
+  margin-bottom: 10%;
+  border-radius: 15px;
+}
+.arboles > :last-child{
+  float: right;
+  width: 40%;
+  height: 100%;
+  margin-top: 40px;
+  margin-right: 10%;
+}
+.arboles > :last-child > p:first-of-type{
+  font-size: 20px;
+  color: var(--color-morado-suave);
+}
+.arboles > :last-child h3{
+  font-size: 48px;
+  color: var(--color-morado);
+}
+.arboles > :last-child > p:last-of-type{
+  font-size: 18px;
+  color:var(--color-morado-suave);
+  opacity: 0.8;
+  margin-bottom: 5%;
+}
+footer{
+  text-align: center;
+}
+footer > h2{
+  font-size: 48px;
+  color: var(--color-morado);
+  margin-bottom: 5%;
+}
+footer ul > li{
+  display: inline-block;
+  width: 33%;
+}
